@@ -25,7 +25,7 @@ int main()
 		}
 		std::stack<int> s(mstack);
 	}
-	std::cout << "saltalsaskaslkdjalskdjalksd\n";
+	std::cout << "ola tudo bem\n";
 	{
 		MutantStack<char> mstack;
 		mstack.push(54);
@@ -50,4 +50,5 @@ int main()
 		std::stack<char> s(mstack);
 		return 0;
 	}
+
 }
