@@ -68,7 +68,7 @@ int main()
 	std::cout << "Testing with std::deque" << std::endl;
 	{
 		std::deque<int> deq;
-		deq.push_back(100);
+		deq.push_front(100);
 		deq.push_back(200);
 		deq.push_back(300);
 		deq.push_back(400);

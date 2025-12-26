@@ -47,13 +47,25 @@ MutantStack<T> &MutantStack<T>::operator=(const MutantStack &src)
 template <typename T>
 typename MutantStack<T>::iterator MutantStack<T>::begin()
 {
-	return (std::stack<T>::c.begin());
+	return this->c.begin();
 }
 
 template <typename T>
 typename MutantStack<T>::iterator MutantStack<T>::end()
 {
-	return (std::stack<T>::c.end());
+	return this->c.end();
+}
+
+template <typename T>
+typename MutantStack<T>::const_iterator MutantStack<T>::begin() const
+{
+    return this->c.begin();
+}
+
+template <typename T>
+typename MutantStack<T>::const_iterator MutantStack<T>::end() const
+{
+    return this->c.end();
 }
 
 #endif
